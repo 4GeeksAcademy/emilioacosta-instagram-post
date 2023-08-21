@@ -1,54 +1,60 @@
 body {
-	background:black;
-	margin: 0;
-	font-family: Helvetica;
-	justify-content: center;
+	margin:0;
+    background-color: black;    
 }
-div{
-box-sizing: border-box;
+.container-main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
-
-div.post{
-    background: white;
-    margin-top: 30px;
-    text-align: left;
-    margin-bottom:20px;
+.instagram-post{
+    width: 400px;
+    background-color: white;
 }
-div.post img{
+.instagram-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+.instagram-header--image{
+    display:flex;
+    align-items: center;   
+}
+.instagram-header--image >div >p{
+    margin: 0px;
+}
+.instagram-header-icon{
+    font-size: 38px;
+    padding-right: 10px; 
+}
+.instagram-header--menu{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+.instagram-image img{
     width: 100%;
 }
-div.post-header i{
-    margin: 0 -4px;
-    align-self: center;
-    display: flex;
-}
-div.post .post-header div:first-child{
-    display: inline-block;
-    width: 10%;  
-    padding: 10px;
-    display: flex  
-}
-div.post .post-header div:last-child{
-    display: inline-block;
-    padding: 10px;
-    text-align: left;
-    color:gray
-    
-}
-
-div.post .post-icons i{
+.instagram-footer--icons{
     display:flex;
-    margin: 0 -4px;
-    align-self: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 10px 20px;
 }
-
-
-div.post h2, div.post p{
-    padding: 10px;
+.instagram-footer--text{
+    padding: 10px 20px;
+}
+.instagram-footer--text p{
     margin: 0;
 }
-div.contenedor{
-    width: 400px;
-    margin:auto;
+
+.instagram-footer--text p:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.instagram-footer--text p:nth-last-child(2){
+    margin-bottom: 10px;
 }
